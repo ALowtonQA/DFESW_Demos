@@ -13,5 +13,4 @@ public class Operators {
 	public void modulus(int numOne, int numTwo) {
 		System.out.println(numOne % numTwo);
 	}
-	
 }
