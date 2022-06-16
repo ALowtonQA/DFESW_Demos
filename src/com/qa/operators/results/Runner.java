@@ -7,5 +7,6 @@ public class Runner {
 
 		res.methodOne();
 		res.methodTwo();
+
 	}
 }
