@@ -6,6 +6,11 @@ public class Runner {
 		
 		Exercises ex = new Exercises();
 		
+//		ex.questionOne();
+//		ex.questionTwo();
+//		ex.questionThree(7); // This returns TRUE if even, FALSE if odd.
 		
+		ex.questionFour();
 	}
+	
 }
