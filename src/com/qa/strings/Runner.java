@@ -108,7 +108,7 @@ public class Runner {
 		
 		System.out.println(words.length);
 		
-		// Contains - Checks if one string contains another - Case sensitive
+		// Contains - Checks if one string contains another - Case sensitive - returns True or False
 		System.out.println(sentence.contains("class"));
 	}
 }

@@ -18,6 +18,11 @@ public class Runner {
 		
 		// Question 4
 		ex.questionFour("These are in reverse order");
+		
+		// Question 5
+		boolean result = ex.questionFive("Hi Anoush", "Hi");
+		System.out.println(result);
+			
 	}
 
 }

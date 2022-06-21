@@ -43,23 +43,24 @@ public class Exercises {
 		
 		String[] words = input.split(" ");
 		
+//		Here we loop in reverse to print them in reverse order
+		for (int i = words.length - 1; i >= 0 ; i--) {
+			System.out.println(words[i]);
+		}
+		
+//		This can also be solved by reversing the array first
 //		List<String> list = Arrays.asList(words); // Convert to List
 //		Collections.reverse(list); // Reversed the List
 //		
 //		for (String word : list) {
 //			System.out.println(word);
 //		}
-		
-		for (int i = words.length - 1; i >= 0 ; i--) {
-			System.out.println(words[i]);
-		}
-		
 	}
 	
-	public void questionFive() {
+	public boolean questionFive(String message, String find) {
 		
-		
-		
+		return message.contains(find); // Will be true if found, false if not
+
 	}
 	
 }
