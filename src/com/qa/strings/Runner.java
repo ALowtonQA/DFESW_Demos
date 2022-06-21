@@ -83,14 +83,14 @@ public class Runner {
 		System.out.println(message.charAt(7));
 		
 		// Get the index of a specific character
-		System.out.println(message.indexOf('a'));
+		System.out.println(message.indexOf('s'));
 		
-		// Starts with - Checks if a string starts with another string
+		// Starts with - Checks if a string starts with another string - Case sensitive
 		System.out.println(message.startsWith("My"));
-		// Ends with - Checks if a string ends with another string 
+		// Ends with - Checks if a string ends with another string - Case sensitive
 		System.out.println(message.endsWith("e"));
 		
-		// Replace - replaces one string, with another.
+		// Replace - replaces one string, with another - Also case sensitive
 		System.out.println(message.replace("My", "Your"));
 		
 		// Strip - Removes leading and trailing whitespace (spaces)
@@ -100,10 +100,15 @@ public class Runner {
 		
 		// Split
 		String sentence = "Hello there class";
-		String[] words = sentence.split(" ");
+		String[] words = sentence.split(" "); // splitting on space, usually splits up words
 		
 		for (String word : words) {
 			System.out.println(word);
 		}
+		
+		System.out.println(words.length);
+		
+		// Contains - Checks if one string contains another - Case sensitive
+		System.out.println(sentence.contains("class"));
 	}
 }
