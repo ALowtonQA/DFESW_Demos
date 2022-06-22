@@ -50,9 +50,13 @@ public class Animal {
 		this.weight = weight;
 	}
 
+	public void makeNoise() {
+		System.out.println("Makes random noise!!!!");
+	}
+	
 	@Override
 	public String toString() {
 		return "Animal [name=" + name + ", colour=" + colour + ", age=" + age + ", weight=" + weight + "]";
 	}
-	
+
 }

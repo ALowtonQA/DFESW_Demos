@@ -13,9 +13,9 @@ public class Dog extends Animal {
 	private boolean isPanting;
 
 	public Dog(String name, String colour, int age, double weight, String breed, boolean isPanting) {
-		super(name, colour, age, weight); // Set the animal properties
-		this.breed = breed;              // Set the Dog properties
-		this.isPanting = isPanting;		// Set the Dog properties
+		super(name, colour, age, weight);
+		this.breed = breed;
+		this.isPanting = isPanting;
 	}
 
 	public String getBreed() {
@@ -34,9 +34,8 @@ public class Dog extends Animal {
 		this.isPanting = isPanting;
 	}
 
-	public void bark() {
-		System.out.println("yap yap yap !!!");
+	@Override
+	public void makeNoise() {
+		System.out.println("Bark instead!!!!!!");
 	}
-	
-	
 }

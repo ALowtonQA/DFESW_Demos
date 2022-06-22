@@ -4,16 +4,17 @@ public class Runner {
 
 	public static void main(String[] args) {
 		
-		Animal dog = new Animal("Bob", "Black", 16, 20.0);
+		Animal animal = new Animal("Bob", "Black", 16, 20.0);
+		animal.makeNoise();
 		
-		System.out.println(dog.getName());
+//		System.out.println(animal.getName());
+//		animal.setName("Bill");
 		
-		dog.setName("Bill");
 		
-		System.out.println(dog);
+		Dog bob = new Dog("Bob", "Black", 16, 20.0, "Labrador", false);
+		Dog charlie = new Dog("Charlie", "White", 17, 12.0, "Jack Russell", false);
 		
-//		Dog bob = new Dog("Bob", "Black", 16, 20.0, "Labrador", false);
-//		Dog charlie = new Dog("Charlie", "White", 17, 12.0, "Jack Russell", false);
+		bob.makeNoise();
 //		
 //		System.out.println(bob.getAge());
 	}
