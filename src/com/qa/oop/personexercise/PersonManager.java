@@ -22,6 +22,20 @@ public class PersonManager {
 		}
 	}
 	
+	// This search method ACTUALLY returns the found entries
+	public List<Person> searchTwo(String name) {
+		
+		List<Person> found = new ArrayList<>();
+		
+		for (Person person : listOfPeople) {
+			if (person.getName().equals(name)) {
+				found.add(person);
+			}
+		}
+		
+		return found;
+	}
+	
 	// Printing the whole list
 	public void printList() {
 		System.out.println(listOfPeople);

@@ -9,7 +9,7 @@ public class Runner {
 		
 		// DataType variableName = value
 		Person anoush = new Person("Anoush", 29, "Trainer");
-		Person dee = new Person("Dee", 29, "Student");
+		Person dee = new Person("Anoush", 29, "Student");
 		Person james = new Person("James", 29, "Student");
 
 		anoush.getName();
@@ -27,9 +27,9 @@ public class Runner {
 		
 //		pm.printList();
 		
-		pm.search("Dee");
+//		pm.search("Anoush");
 		
-		pm.printEachPerson();
+//		pm.printEachPerson();
 	}
 
 }
