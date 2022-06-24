@@ -6,12 +6,10 @@ import java.util.List;
 public class Runner {
 
 	public static void main(String[] args) {
-		
-		Animal animal = new Animal("Bob", "Black", 16, 20.0);
-
+				
 		Cat bill = new Cat("Bill", "Brown", 8, 10.0);
-		
 		Dog bob = new Dog("Bob", "Black", 16, 20.0, "Labrador", false);
+
 		
 		List<Cat> listOfCats = new ArrayList<>();
 		List<Dog> listOfDogs = new ArrayList<>();
@@ -32,7 +30,6 @@ public class Runner {
 		// Dog is an Object
 		
 //		List<Animal> listOfAnimals = new ArrayList<>();
-		listOfAnimals.add(animal);
 		listOfAnimals.add(bob);
 		listOfAnimals.add(bill);
 		

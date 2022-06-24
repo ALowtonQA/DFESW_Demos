@@ -4,7 +4,7 @@ package com.qa.oop;
 //   1) private properties
 //   2) 'getters' and 'setters' for those properties
 //   3) A constructor which gives those properties initial values
-public class Animal {
+public abstract class Animal {
 
 	private String name;
 	private String colour;
@@ -50,9 +50,7 @@ public class Animal {
 		this.weight = weight;
 	}
 
-	public void makeNoise() {
-		System.out.println("Makes random noise!!!!");
-	}
+	public abstract void makeNoise();
 	
 	@Override
 	public String toString() {

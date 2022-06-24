@@ -21,7 +21,7 @@ public class Runner {
 		String message = new String("My Message");
 		String anotherMessage = new String("My Message");		
 		
-		// Actually compares string VALUES to see if they're equal
+		// Actually compares string VALUES to see if they're exactly equal - Case sensitive
 		if (message.equals(anotherMessage)) {
 			System.out.println("They are the same!");
 		} else {

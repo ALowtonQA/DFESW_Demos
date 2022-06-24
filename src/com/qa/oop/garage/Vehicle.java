@@ -1,6 +1,6 @@
 package com.qa.oop.garage;
 
-public class Vehicle {
+public abstract class Vehicle {
 
 	private String make;
 	private String colour;
@@ -37,9 +37,7 @@ public class Vehicle {
 		this.numOfWheels = numOfWheels;
 	}
 
-	public void calculateBill() {
-		System.out.println("");
-	}
+	public abstract void calculateBill();
 	
 	@Override
 	public String toString() {
