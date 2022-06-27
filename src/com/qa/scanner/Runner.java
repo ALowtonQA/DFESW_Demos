@@ -40,8 +40,6 @@ public class Runner {
 			} else {
 				System.out.println("Invalid choice. Application restart.");
 			}
-
 		}
-		
 	}
 }
