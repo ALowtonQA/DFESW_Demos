@@ -7,8 +7,17 @@ public class Runner {
 
 	public static void main(String[] args) {
 		
-		boolean flag = true;
-
+		ExceptionExample ex = new ExceptionExample();
+		
+		try {
+			ex.multiplyException(5, 2);
+		} catch (MultiplyByFiveException mbfe) {
+			mbfe.printStackTrace();
+		}
+		
+		
+//		boolean flag = true;
+		
 //		while (flag) {
 //			Scanner scanner = new Scanner(System.in);
 //			
@@ -34,17 +43,17 @@ public class Runner {
 //			}
 //		}
 		
-		Scanner scanner = new Scanner(System.in);
-		
-		int numOne = scanner.nextInt();
-		int numTwo = scanner.nextInt();
-		
-		try {
-			System.out.println(numOne/numTwo);
-		} catch (ArithmeticException ae) {
-			System.out.println("You can't divide by zero, dummy :)");
-//			ae.printStackTrace(); // Can print the stack trace for further debugging - if needed.
-		}
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		int numOne = scanner.nextInt();
+//		int numTwo = scanner.nextInt();
+//		
+//		try {
+//			System.out.println(numOne/numTwo);
+//		} catch (ArithmeticException ae) {
+//			System.out.println("You can't divide by zero, dummy :)");
+////			ae.printStackTrace(); // Can print the stack trace for further debugging - if needed.
+//		}
 
 	}
 }
