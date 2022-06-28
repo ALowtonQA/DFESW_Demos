@@ -16,32 +16,32 @@ public class Runner {
 		}
 		
 		
-//		boolean flag = true;
+		boolean flag = true;
 		
-//		while (flag) {
-//			Scanner scanner = new Scanner(System.in);
-//			
-//			System.out.println("Please enter a integer: ");
+		while (flag) {
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println("Please enter a integer: ");
 //	
-//			int numberOne = 0;
+			int numberOne = 0;
 //			
-//			try {
-//				numberOne = scanner.nextInt(); // This line is throwing an exception when the input is invalid.
-//				System.out.println("The number you entered was: " + numberOne);
-//				flag = false;
-//			} catch (InputMismatchException ime) {
-//				System.out.println("You didn't enter an integer");
-//				scanner.nextLine(); // clears the scanner
-//	//			ime.printStackTrace();
-//			} catch (Exception e) { // Exception is the parent. So it will catch ALL exceptions.
-//				System.out.println("Something else went wrong.");
-//				e.printStackTrace();
-//				scanner.nextLine(); // clears the scanner
-//			} finally { // THIS ALWAYS RUNS
-//				System.out.println("I always run");
-//				scanner.close();
-//			}
-//		}
+			try {
+				numberOne = scanner.nextInt(); // This line is throwing an exception when the input is invalid.
+				System.out.println("The number you entered was: " + numberOne);
+				flag = false;
+			} catch (InputMismatchException ime) {
+				System.out.println("You didn't enter an integer");
+				scanner.nextLine(); // clears the scanner
+	//			ime.printStackTrace();
+			} catch (Exception e) { // Exception is the parent. So it will catch ALL exceptions.
+				System.out.println("Something else went wrong.");
+				e.printStackTrace();
+				scanner.nextLine(); // clears the scanner
+			} finally { // THIS ALWAYS RUNS
+				System.out.println("I always run");
+				scanner.close();
+			}
+		}
 		
 //		Scanner scanner = new Scanner(System.in);
 //		
