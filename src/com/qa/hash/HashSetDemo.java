@@ -4,6 +4,10 @@ import java.util.HashSet;
 
 public class HashSetDemo {
 
+	public void myMethod() {
+		
+	}
+	
 	public static void main(String[] args) {
 		
 		// Key/Value pairs
@@ -37,7 +41,18 @@ public class HashSetDemo {
 		System.out.println(myHashSet.contains("Claire"));
 		
 		// This is what a hashcode looks like
-//		System.out.println("Charles".hashCode());
+		System.out.println("Charles".hashCode());
+		
+		// Enhanced for loop
+		for (String value : myHashSet) {
+			System.out.println(value);
+		}
+		
+		// forEach
+		// For each entry in the collection, the provided method will run.
+		myHashSet.forEach(value -> System.out.println(value));
+		
+//		myHashSet.forEach(System.out::println);
+
 	}
-	
 }
