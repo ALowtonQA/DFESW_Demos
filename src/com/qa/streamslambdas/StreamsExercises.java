@@ -34,8 +34,8 @@ public class StreamsExercises {
 		List<Integer> listOfInts = List.of(3, 4, 7, 8, 12);
 		Stream<Integer> streamOfInts = listOfInts.stream();
 		
-//		int product = streamOfInts.reduce((num1, num2) -> num1 * num2).get();	
-//		System.out.println(product);
+		int product = streamOfInts.reduce((num1, num2) -> num1 * num2).get();	
+		System.out.println(product);
 		
 		// Question three
 		// Three ways of doing the same thing:
@@ -49,5 +49,23 @@ public class StreamsExercises {
 		System.out.println(max);
 		System.out.println(min);
 		
+		
+		// Question four - removes odd numbers, by keeping even numbers.
+		streamOfInts.filter(num -> num % 2 == 0).forEach(num -> System.out.println(num));
+		
+		// Remove the even numbers, by keeping the odd numbers
+		streamOfInts.filter(num -> num % 2 != 0).forEach(num -> System.out.println(num));
+		
+		
+		// Question 5
+		int sum = streamOfInts.reduce((num1, num2) -> num1 + num2).get();
+//		int sum = streamOfInts.mapToInt(Integer::intValue).sum();
+		
+//		System.out.println(sum);
+		
+		// Question 6
+//		int min = streamOfInts.map(num -> num * num).filter(num -> num % 2 != 0).min((num1, num2) -> Integer.compare(num1, num1)).get();
+		int result = streamOfInts.map(num -> (int)Math.pow(num, 2)).filter(num -> num % 2 != 0).min((num1, num2) -> Integer.compare(num1, num1)).get();
+		System.out.println(min);
 	}
 }
