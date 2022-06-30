@@ -8,15 +8,17 @@ public class Car {
 	private String colour;
 	private String model;
 	private int mileage;
+	private boolean hasSpoiler;
 	
 	// Constructor
-	public Car(String colour, String model, int mileage) {
+	public Car(String colour, String model, int mileage, boolean hasSpoiler) {
 		super();
 		this.colour = colour;
 		this.model = model;
 		this.mileage = mileage;
+		this.hasSpoiler = hasSpoiler;
 	}
-
+	
 	// Getters and Setters
 	public String getColour() {
 		return colour;
@@ -40,5 +42,13 @@ public class Car {
 	
 	public void setMileage(int mileage) {
 		this.mileage = mileage;
+	}
+	
+	public boolean isHasSpoiler() {
+		return hasSpoiler;
+	}
+	
+	public void setHasSpoiler(boolean hasSpoiler) {
+		this.hasSpoiler = hasSpoiler;
 	}
 }
